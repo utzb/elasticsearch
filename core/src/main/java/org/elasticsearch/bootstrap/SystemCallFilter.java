@@ -242,6 +242,7 @@ final class SystemCallFilter {
         Map<String,Arch> m = new HashMap<>();
         m.put("amd64", new Arch(0xC000003E, 0x3FFFFFFF, 57, 58, 59, 322, 317));
         m.put("aarch64",  new Arch(0xC00000B7, 0xFFFFFFFF, 1079, 1071, 221, 281, 277));
+        m.put("s390x", new Arch(0x80000016, 0xFFFFFFFF, 1, 190, 11, 354, 348));
         ARCHITECTURES = Collections.unmodifiableMap(m);
     }
 
